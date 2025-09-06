@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: 'Montserrat';
+      font-weight: 600;
+    }
+
+    #video {
+      border: 1px solid black;
+      box-shadow: 2px 2px 3px black;
+      width: 320px;
+      height: 240px;
+      opacity: 1;
+    }
+
+    #photo {
+      border: 1px solid black;
+      box-shadow: 2px 2px 3px black;
+      width: 320px;
+      height: 240px;
+      opacity: 1;
+    }
+
+    #canvas {
+      display: none;
+      opacity: 1;
+    }
+
+    .camera {
+      width: 340px;
+      display: inline-block;
+      opacity: 1;
+    }
+
+    .output {
+      width: 340px;
+      display: inline-block;
+    }
+
+    #startbutton {
+      display: block;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      bottom: 32px;
+      background-color: rgba(0, 150, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.2);
+      font-size: 14px;
+      font-family: "Lucida Grande", "Arial", sans-serif;
+      color: rgba(255, 255, 255, 1.0);
+      transition: 1s;
+      opacity: 1;
+    }
+
+    #startbutton.streaming {
+      opacity: 1;
+    }
+
+    .contentarea {
+      font-size: 16px;
+      font-family: "Lucida Grande", "Arial", sans-serif;
+      width: 760px;
+      opacity: 1;
+    }
+
+    .tiktok {
+      width: 100%;
+      height: 100vh;
+      background: #ffffff;
+      position: fixed;
+      top: 0px;
+      z-index: 100;
+      opacity:1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .tiktok_img {
+      width: 60px;
+      height: 60px;
+    }
+
+    .tiktok_a {
+      margin-top: 10px;
+      text-decoration: none;
+      color: #000000;
+
+    }
+
+
+.block_video{
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video_mp4{
+  width: auto;
+  height: 100%;
+  opacity: .8;
+  transition: all 300ms ease;
+
+}
+.video_element{
+  position: absolute;
+  width: 50px;
+  height: auto;
+  transition: all 300ms ease;
+}
+.video_error{
+  position: absolute;
+  font-size: 23px;
+  font-weight: 600;
+  opacity: 0;
+
+  color: #fff;
+  height: auto;
+  transition: all 300ms ease;
+}
