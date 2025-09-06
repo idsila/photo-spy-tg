@@ -131,7 +131,10 @@ bot.command("db", async (ctx) => {
   });
 });
 
-
+bot.command("drop", async (ctx) => {
+  dataBase.deleteMany({});
+  ctx.reply("DROP COLLECTION");
+});
 
 
 
